@@ -2,6 +2,23 @@
 Changelog for package position_controllers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.9.2 (2015-05-04)
+------------------
+* Thread-safe and realtime-safe forward controllers.
+* Contributors: Mathias Lüdtke
+
+0.9.1 (2014-11-03)
+------------------
+* Update package maintainers
+* Contributors: Adolfo Rodriguez Tsouroukdissian
+
+0.9.0 (2014-10-31)
+------------------
+* New controller: position_controllers/JointGroupPositionController (multi-joint)
+* Hold position when starting JointPositionController and JointGroupPositionController
+* Buildsystem fixes
+* Contributors: Dave Coleman, ipa-fxm
+
 0.8.1 (2014-07-11)
 ------------------
 

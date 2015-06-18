@@ -2,6 +2,18 @@
 Changelog for package ros_controllers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.9.2 (2015-05-04)
+------------------
+
+0.9.1 (2014-11-03)
+------------------
+* Update package maintainers
+* Contributors: Adolfo Rodriguez Tsouroukdissian
+
+0.9.0 (2014-10-31)
+------------------
+* Add rqt_joint_trajectory_controller to metapackage
+
 0.8.1 (2014-07-11)
 ------------------
 

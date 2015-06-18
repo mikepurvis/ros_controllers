@@ -2,6 +2,26 @@
 Changelog for package diff_drive_controller
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.9.2 (2015-05-04)
+------------------
+* Allow the wheel separation and radius to be set from different sources
+  i.e. one can be set from the URDF, the other from the parameter server.
+  If wheel separation and wheel diameter is specified in the parameter server, don't look them up from urdf
+* Contributors: Bence Magyar, Nils Berg
+
+0.9.1 (2014-11-03)
+------------------
+
+0.9.0 (2014-10-31)
+------------------
+* Add support for multiple wheels per side
+* Odometry computation:
+  - New option to compute in open loop fashion
+  - New option to skip publishing odom frame to tf
+* Remove dependency on angles package
+* Buildsystem fixes
+* Contributors: Bence Magyar, Lukas Bulwahn, efernandez
+
 0.8.1 (2014-07-11)
 ------------------
 

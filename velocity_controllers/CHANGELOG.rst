@@ -2,6 +2,23 @@
 Changelog for package velocity_controllers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.9.2 (2015-05-04)
+------------------
+* Thread-safe and realtime-safe forward controllers.
+* Contributors: Mathias Lüdtke
+
+0.9.1 (2014-11-03)
+------------------
+* Update package maintainers
+* Add missing dependencies
+* Contributors: Adolfo Rodriguez Tsouroukdissian
+
+0.9.0 (2014-10-31)
+------------------
+* New controller: velocity_controllers/JointGroupVelocityController (multi-joint)
+* New controller: velocity_controllers/JointPositionController
+* Contributors: ipa-fxm, Dave Coleman
+
 0.8.1 (2014-07-11)
 ------------------
 

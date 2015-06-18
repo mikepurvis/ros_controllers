@@ -2,6 +2,21 @@
 Changelog for package forward_command_controller
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.9.2 (2015-05-04)
+------------------
+* Thread-safe and realtime-safe forward controllers.
+* Complain if list of joints is empty.
+* Contributors: Mathias Lüdtke
+
+0.9.1 (2014-11-03)
+------------------
+
+0.9.0 (2014-10-31)
+------------------
+* ForwardJointGroupCommandController: Class for implementing multi-joint
+  command-forwarding controllers
+* Contributors: ipa-fxm
+
 0.8.1 (2014-07-11)
 ------------------
 

@@ -42,6 +42,7 @@
 #include <hardware_interface/joint_command_interface.h>
 #include <controller_interface/controller.h>
 #include <std_msgs/Float64.h>
+#include <realtime_tools/realtime_buffer.h>
 
 
 namespace forward_command_controller
@@ -68,7 +69,7 @@ template <class T>
 class ForwardCommandController: public controller_interface::Controller<T>
 {
 public:
-  ForwardCommandController() : command_(0) {}
+  ForwardCommandController() {}
   ~ForwardCommandController() {sub_command_.shutdown();}
 
   bool init(T* hw, ros::NodeHandle &n)
@@ -84,15 +85,15 @@ public:
     return true;
   }
 
-  void starting(const ros::Time& time) {command_ = 0.0;}
-  void update(const ros::Time& time, const ros::Duration& period) {joint_.setCommand(command_);}
+  void starting(const ros::Time& time);
+  void update(const ros::Time& time, const ros::Duration& period) {joint_.setCommand(*command_buffer_.readFromRT());}
 
   hardware_interface::JointHandle joint_;
-  double command_;
+  realtime_tools::RealtimeBuffer<double> command_buffer_;
 
 private:
   ros::Subscriber sub_command_;
-  void commandCB(const std_msgs::Float64ConstPtr& msg) {command_ = msg->data;}
+  void commandCB(const std_msgs::Float64ConstPtr& msg) {command_buffer_.writeFromNonRT(msg->data);}
 };
 
 }
