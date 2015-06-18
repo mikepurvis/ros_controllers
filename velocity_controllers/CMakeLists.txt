@@ -7,6 +7,7 @@ find_package(catkin REQUIRED COMPONENTS
   forward_command_controller
   control_toolbox
   realtime_tools
+  urdf
 )
 
 # Declare catkin package
